@@ -2,17 +2,20 @@
 import "bootstrap";
 import "./style.css";
 
+/*document.getElementById("dealCard").addEventListener("click", function() {
+  document.querySelector(".card").classList.add(randomSuit());
+  document.querySelector(".cardNumber").innerHTML = randomNumbers();
+});*/
+
 window.onload = () => {
   document.querySelector(".card").classList.add(randomSuit());
   document.querySelector(".cardNumber").innerHTML = randomNumbers();
 };
 
-/*document.querySelector(".btn").addEventListener("click", myFunction);
-
-function myFunction() {
+window.onload = () => {
   document.querySelector(".card").classList.add(randomSuit());
   document.querySelector(".cardNumber").innerHTML = randomNumbers();
-}*/
+};
 
 // random suit
 let randomSuit = () => {

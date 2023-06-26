@@ -1,1 +1,67 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* {
+  border: black;
+  border-style: dashed;
+}*/
+
+body {
+  background: #0c592e;
+  box-sizing: border-box;
+}
+
+.card {
+  display: inline-block;
+  text-align: center;
+  background: #f2f0d5;
+  padding: 20px;
+  padding-top: 90px;
+  margin: auto;
+  height: 500px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 5px 10px 10px #07401b;
+  position: relative;
+  &:before {
+    content: "\2660";
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 70px;
+  }
+  &:after {
+    content: "\2660";
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-size: 70px;
+    -moz-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -ms-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+  }
+  &.diamond:before,
+  &.diamond:after {
+    content: "\2666";
+    color: #bf1f2c;
+  }
+
+  &.heart:before,
+  &.heart:after {
+    content: "\2665";
+    color: #bf1f2c;
+  }
+  &.club:before,
+  &.club:after {
+    content: "\2663";
+  }
+  &.spade:before,
+  &.spade:after {
+    content: "\2660";
+  }
+}
+
+.cardNumber {
+  font-size: 200px;
+}

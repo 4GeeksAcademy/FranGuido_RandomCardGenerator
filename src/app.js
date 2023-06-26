@@ -12,11 +12,6 @@ window.onload = () => {
   document.querySelector(".cardNumber").innerHTML = randomNumbers();
 };
 
-window.onload = () => {
-  document.querySelector(".card").classList.add(randomSuit());
-  document.querySelector(".cardNumber").innerHTML = randomNumbers();
-};
-
 // random suit
 let randomSuit = () => {
   let suit = ["heart", "diamond", "spade", "club"];

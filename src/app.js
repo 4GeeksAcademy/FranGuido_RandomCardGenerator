@@ -2,30 +2,21 @@
 import "bootstrap";
 import "./style.css";
 
-// click button v1
-/*document.querySelector(".dealCard").addEventListener("click", function() {
+/* window.onload = () => {
   document.querySelector(".card").classList.add(randomSuit());
+  document.querySelector(".cardNumber").innerHTML = randomNumbers();
+}; */
+
+// click button v1
+document.querySelector(".dealCard").addEventListener("click", function() {
+  document.querySelector("#card").className = "card " + randomSuit();
   document.querySelector(".cardNumber").innerHTML = randomNumbers();
 });
 
-//click button v2
-document.querySelector(".dealCard").onclick = function() {
-  newCard();
-};
-function newCard() {
-  document.querySelector(".card").classList.add(randomSuit());
-  document.querySelector(".cardNumber").innerHTML = randomNumbers();
-}*/
-
-window.onload = () => {
-  document.querySelector(".card").classList.add(randomSuit());
-  document.querySelector(".cardNumber").innerHTML = randomNumbers();
-};
-
-// timer
+// timer, show one card every second
 
 /*setInterval(() => {
-  document.querySelector(".card").classList.add(randomSuit());
+  document.querySelector("#card").className = "card " + randomSuit();
   document.querySelector(".cardNumber").innerHTML = randomNumbers();
 }, 1000);*/
 
@@ -49,8 +40,6 @@ let randomNumbers = () => {
     "8",
     "9",
     "10",
-    "11",
-    "12",
     "J",
     "K",
     "Q"
